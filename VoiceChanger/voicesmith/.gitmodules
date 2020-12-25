@@ -1,0 +1,3 @@
+[submodule "greendroid"]
+	path = greendroid
+	url = git://github.com/jurihock/voicesmith.greendroid.git

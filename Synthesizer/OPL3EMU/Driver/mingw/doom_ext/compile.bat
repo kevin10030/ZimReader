@@ -1,0 +1,1 @@
+g++ ..\..\c_interface\c_interface.cpp ..\..\fmopl3lib_ext\*.cpp ..\..\src\MidiSynth.cpp ..\..\src\winmm_drv_doom_ext.cpp ..\..\synthlib_ext\i_oplmusic.cpp -s -static -shared -Wl,--add-stdcall-alias -lwinmm -Wl,-subsystem,windows -o opl3doom_ext.dll
