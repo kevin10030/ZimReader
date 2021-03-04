@@ -1,3 +1,0 @@
-F:/android_code/FmodTest/app/.externalNativeBuild/cmake/release/x86/CMakeFiles/native-lib.dir
-F:/android_code/FmodTest/app/.externalNativeBuild/cmake/release/x86/CMakeFiles/edit_cache.dir
-F:/android_code/FmodTest/app/.externalNativeBuild/cmake/release/x86/CMakeFiles/rebuild_cache.dir
