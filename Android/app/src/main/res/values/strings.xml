@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">EduSims</string>
+
+    <string name="about">About</string>
+    <string name="app_copyright">© jinung technology</string>
+    <string name="app_created_by">App created by:</string>
+    <string name="app_credit">PhET Interactive Simulations at the University of Colorado Boulder</string>
+    <string name="app_credit_a11y">App created by: PhET Interactive Simulations at the University of Colorado Boulder © Regents of the University of Colorado Boulder</string>
+    <string name="app_info">Application Info</string>
+    <string name="app_info_a11y">More Info</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="category">Category:</string>
+    <string name="done">Done</string>
+    <string name="done_a11y">Back to simulations</string>
+    <string name="done_button_a11y">Back to simulations button</string>
+    <string name="favorite">Favorite</string>
+    <string name="favorites">Favorites:</string>
+    <string name="grade_level">Grade Level:</string>
+    <string name="insufficient_storage_close">CLOSE</string>
+    <string name="insufficient_storage_continue">CONTINUE</string>
+    <string name="insufficient_storage_init">There is not enough disk space to open PhET Interactive Simulations. Please clear some space and try again. This app requires at least 100MB of free space to function properly.</string>
+    <string name="insufficient_storage_title">Insufficient Storage</string>
+    <string name="insufficient_storage_update">There is not enough disk space to download or update simulations. Please clear some space on your device to receive the latest updates. This app requires at least 100MB of free space to function properly.</string>
+    <string name="no_results">No Results</string>
+    <string name="play">Play</string>
+    <string name="preference_key">edu.colorado.phet.android</string>
+    <string name="refresh">Refresh</string>
+    <string name="reset">Reset</string>
+    <string name="reset_confirmation">Reset favorite sims?</string>
+    <string name="search_hint">Search</string>
+    <string name="search_toggle">Search</string>
+    <string name="search_toggle_a11y">Search Button</string>
+    <string name="selected_favorite_a11y">Selected Favorites</string>
+    <string name="settings_toggle">Settings</string>
+    <string name="settings_toggle_a11y">Settings Button</string>
+    <string name="simulations">Simulations:</string>
+    <string name="still_downloading">Still Downloading Simulation</string>
+    <string name="unselected_favorite_a11y">Unselected Favorites</string>
+    <string name="update">Update Simulations</string>
+    <string name="update_button">Continue</string>
+    <string name="update_confirmation">Simulations are now updating.</string>
+</resources>

@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+<!--    "Theme.AppCompat.DayNight.NoActionBar"-->
+    <style name="AppTheme"  parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/material_blue_grey_900</item>
+<!--        <item name="android:spinnerStyle">@style/AppTheme.spinnerStyle</item>-->
+<!--        <item name="android:spinnerDropDownItemStyle">@style/AppTheme.spinnerDropDownItemStyle</item>-->
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialog_fragment_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_fragment_exit</item>
+    </style>
+    <style name="DialogFragmentTheme">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+
+    <style name="spinnerItemStyle" parent="android:Widget.TextView.SpinnerItem">
+
+    </style>
+
+    <style name="spinnerDropDownItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+
+    </style>
+
+<!--    <style name="AppTheme.spinnerStyle" parent="@android:style/Widget.Material.Light.Spinner">-->
+<!--        <item name="android:textColor">@android:color/white</item>-->
+<!--        <item name="android:background">@color/colorPrimary</item>-->
+
+<!--    </style>-->
+<!--    <style name="AppTheme.spinnerDropDownItemStyle" parent="@android:style/Widget.Material.DropDownItem.Spinner">-->
+<!--        <item name="android:textColor">@android:color/white</item>-->
+<!--        <item name="android:background">@color/colorPrimary</item>-->
+<!--    </style>-->
+
+
+</resources>

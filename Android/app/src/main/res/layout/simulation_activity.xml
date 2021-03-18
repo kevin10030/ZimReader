@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/control_bar" android:background="@color/black" android:focusable="true" android:nextFocusLeft="@+id/done_button" android:nextFocusRight="@+id/done_button" android:nextFocusUp="@+id/done_button" android:nextFocusDown="@+id/done_button" android:layout_width="match_parent" android:layout_height="35sp" android:nextFocusForward="@+id/done_button">
+        <FrameLayout android:id="@+id/done_button" android:background="@drawable/selectable_border" android:focusable="true" android:nextFocusLeft="@+id/done_button" android:nextFocusRight="@+id/refresh_button" android:nextFocusUp="@+id/done_button" android:nextFocusDown="@+id/webview_fragment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:onClick="done" android:contentDescription="@string/done_button_a11y" android:nextFocusForward="@+id/refresh_button">
+            <TextView android:textSize="@dimen/default_text_size" android:textColor="@color/simulation_activity_text" android:gravity="center_vertical" android:background="@color/simulation_activity_background" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_margin="5dp" android:text="@string/done"/>
+        </FrameLayout>
+        <TextView android:textSize="@dimen/default_text_size" android:gravity="center_vertical" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerHorizontal="true"/>
+        <FrameLayout android:id="@+id/refresh_button" android:background="@drawable/selectable_border" android:focusable="true" android:nextFocusLeft="@+id/done_button" android:nextFocusRight="@+id/favorite_button" android:nextFocusUp="@+id/webview_fragment" android:nextFocusDown="@+id/webview_fragment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/favorite_button" android:onClick="refresh" android:contentDescription="@string/refresh" android:nextFocusForward="@+id/favorite_button">
+            <ImageView android:background="@color/simulation_activity_background" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_margin="5dp" android:src="@drawable/refresh"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/favorite_button" android:background="@drawable/selectable_border" android:focusable="true" android:nextFocusLeft="@+id/refresh_button" android:nextFocusRight="@+id/webview_fragment" android:nextFocusUp="@+id/favorite_button" android:nextFocusDown="@+id/webview_fragment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:onClick="toggleFavorite" android:nextFocusForward="@+id/webview_fragment">
+            <ImageView android:background="@color/simulation_activity_background" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_margin="5dp"/>
+        </FrameLayout>
+    </RelativeLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/control_bar">
+        <fragment android:name="com.jinung.edu.sims.SimulationActivity$WebviewFragment" android:id="@+id/webview_fragment" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</RelativeLayout>
