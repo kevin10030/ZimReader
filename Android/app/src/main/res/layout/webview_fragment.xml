@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<WebView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/webview" android:focusable="true" android:nextFocusLeft="@+id/done_button" android:nextFocusRight="@+id/done_button" android:nextFocusUp="@+id/done_button" android:nextFocusDown="@+id/done_button" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/control_bar" android:nextFocusForward="@+id/done_button" android:importantForAccessibility="no"/>
