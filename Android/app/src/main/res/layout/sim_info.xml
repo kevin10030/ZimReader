@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="center" android:orientation="horizontal" android:padding="0dp" android:layout_width="593dp" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/empty_for_talkback" android:focusable="true" android:nextFocusLeft="@+id/back" android:nextFocusRight="@+id/back" android:nextFocusUp="@+id/back" android:nextFocusDown="@+id/back" android:layout_width="0dp" android:layout_height="0dp" android:nextFocusForward="@+id/back"/>
+    <FrameLayout android:background="@color/chevron_background" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/back" android:background="@drawable/selectable_border" android:focusable="true" android:nextFocusLeft="@+id/back" android:nextFocusRight="@+id/sim_info_image" android:nextFocusUp="@+id/back" android:nextFocusDown="@+id/back" android:layout_width="40dp" android:layout_height="match_parent" android:contentDescription="@string/done_a11y" android:nextFocusForward="@+id/sim_info_image">
+            <FrameLayout android:layout_gravity="center" android:background="@color/chevron_background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5dp">
+                <ImageView android:layout_gravity="center" android:background="@color/chevron_background" android:layout_width="30dp" android:layout_height="wrap_content" android:layout_margin="5dp" android:src="@drawable/chevron_left" android:adjustViewBounds="true"/>
+            </FrameLayout>
+        </FrameLayout>
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@color/sim_info_background" android:padding="24dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/image_and_favorite" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <FrameLayout android:id="@+id/sim_info_image" android:background="@drawable/selectable_border" android:focusable="true" android:nextFocusLeft="@+id/back" android:nextFocusRight="@+id/category_text_1" android:nextFocusUp="@+id/sim_info_image" android:nextFocusDown="@+id/sim_info_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="launchSimulation" android:nextFocusForward="@+id/category_text_1" android:layout_marginRight="20dp">
+                <ImageView android:layout_width="200dp" android:layout_height="wrap_content" android:layout_margin="5dp" android:src="@drawable/phet_logo" android:scaleType="fitStart" android:adjustViewBounds="true"/>
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:textSize="@dimen/large_text_size" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Very Long Example Title: Basics" android:layout_marginLeft="5dp"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="375dp" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_gravity="top|left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:paddingTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <FrameLayout android:id="@+id/category_text_1" android:background="@drawable/selectable_border" android:focusable="true" android:nextFocusUp="@+id/category_text_1" android:nextFocusDown="@+id/sim_info_favorite_image" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/default_text_size" android:textStyle="bold" android:textColor="@color/phet_blue" android:background="@drawable/rounded_light_theme_background" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="EARTH SCIENCE"/>
+                        </FrameLayout>
+                        <FrameLayout android:id="@+id/category_text_2" android:background="@drawable/selectable_border" android:focusable="true" android:nextFocusUp="@+id/category_text_2" android:nextFocusDown="@+id/sim_info_favorite_image" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/default_text_size" android:textStyle="bold" android:textColor="@color/phet_blue" android:background="@drawable/rounded_light_theme_background" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="EARTH SCIENCE"/>
+                        </FrameLayout>
+                        <FrameLayout android:id="@+id/category_text_3" android:background="@drawable/selectable_border" android:focusable="true" android:nextFocusUp="@+id/category_text_3" android:nextFocusDown="@+id/sim_info_favorite_image" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/default_text_size" android:textStyle="bold" android:textColor="@color/phet_blue" android:background="@drawable/rounded_light_theme_background" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="EARTH SCIENCE" android:lines="1"/>
+                        </FrameLayout>
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="top|left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <FrameLayout android:id="@+id/category_text_4" android:background="@drawable/selectable_border" android:focusable="true" android:nextFocusUp="@+id/category_text_4" android:nextFocusDown="@+id/sim_info_favorite_image" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/default_text_size" android:textStyle="bold" android:textColor="@color/phet_blue" android:background="@drawable/rounded_light_theme_background" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="EARTH SCIENCE"/>
+                        </FrameLayout>
+                        <FrameLayout android:id="@+id/category_text_5" android:background="@drawable/selectable_border" android:focusable="true" android:nextFocusUp="@+id/category_text_5" android:nextFocusDown="@+id/sim_info_favorite_image" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/default_text_size" android:textStyle="bold" android:textColor="@color/phet_blue" android:background="@drawable/rounded_light_theme_background" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="EARTH SCIENCE"/>
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <FrameLayout android:id="@+id/sim_info_favorite_image" android:background="@drawable/selectable_border_small" android:focusable="true" android:nextFocusLeft="@+id/sim_info_image" android:nextFocusRight="@+id/sim_info_favorite_image" android:nextFocusUp="@+id/category_text_1" android:nextFocusDown="@+id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:nextFocusForward="@+id/description">
+                    <ImageView android:layout_gravity="start" android:background="@color/sim_info_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:src="@drawable/heart_filled" android:adjustViewBounds="true" android:maxWidth="30dp" android:maxHeight="30dp"/>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/description" android:background="@drawable/selectable_border" android:focusable="true" android:nextFocusLeft="@+id/back" android:nextFocusRight="@+id/description" android:nextFocusUp="@+id/sim_info_favorite_image" android:nextFocusDown="@+id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:nextFocusForward="@+id/back">
+            <TextView android:textSize="@dimen/default_text_size" android:background="@color/sim_info_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="2dp" android:text="Super long example text. Super long example text. Super long example text. Super long example text. Super long example text. Super long example text. Super long example text. Super long example text. Super long example text.  "/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>
